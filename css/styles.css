@@ -8,3 +8,55 @@ body {
 h1 {
   color: #333;
 }
+
+#modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.412);
+}
+
+#closeButton {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  color: rgba(0, 0, 0, 0.523);
+  font-size: 40px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 9;
+  top: 3px;
+}
+
+#countries-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.country-card {
+  border: 1px solid rgba(0, 0, 0, 0.132);
+  margin: 10px;
+  padding: 15px;
+  width: 200px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.country-card img {
+  width: 200px;
+}
+
+.modal-content {
+  border: 1px solid rgba(0, 0, 0, 0.233);
+  padding: 50px;
+  background-color: white;
+  position: relative;
+}
